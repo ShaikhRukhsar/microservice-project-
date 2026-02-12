@@ -189,7 +189,7 @@ systemctl start docker
 # Wait for network
 sleep 20
 
-docker pull mujju1716/amazon-nginx:latest
+docker pull rukhsar07/amazon-nginx:v1
 
 docker rm -f web || true
 
@@ -197,7 +197,7 @@ docker run -d \
   --name web \
   --restart=always \
   -p 80:80 \
-  mujju1716/amazon-nginx:latest
+  rukhsar07/amazon-nginx:v1
 EOF
 }
 
